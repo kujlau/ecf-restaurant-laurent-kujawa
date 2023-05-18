@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'roman-italic';
+  src: url(fonts/RomanAntique-Italic.ttf);
+}
+@font-face {
+  font-family: 'cormorant-bold';
+  src: url(fonts/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+  font-family: 'cormorant-italic';
+  src: url(fonts/CormorantGaramond-Italic.ttf);
+}
+@font-face {
+  font-family: 'puritan';
+  src: url(fonts/Puritan-Regular.ttf);
+}
+@font-face {
+  font-family: 'puritan-italic';
+  src: url(fonts/Puritan-Italic.ttf);
+}
+@font-face {
+  font-family: 'rasa';
+  src: url(fonts/Rasa-Regular.ttf);
+}
+@font-face {
+  font-family: 'rasa-italic';
+  src: url(fonts/Rasa-Italic.ttf);
+}
+
+body{
+  background-color: #122620;
+  
+  margin:0;
+  padding:0;
+}
+
+body, h1, h2{
+  margin:0;
+  padding:0;
+}
+
+h1{
+  font-family: 'cormorant-bold', 'sans-serif';
+  color: #D6AD60;
+  /* border:solid 1px; */
+}
+
+h2{
+  font-family: 'rasa';
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  width:98vw;
+  /* border:solid 1px; */
+}
+
+.nom-restaurant{
+  font-size: 4vw;
+  width:410px;
+}
+
+.nom-chef{
+  display:flex;
+  justify-content: center;
+  width:410px;
+  font-size: 3vw;
+}
+
+img.logo{
+  height:150px;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  width: 98vw;
+  margin-top: 30px;
+  /* border:solid 1px; */
+}
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  width:50vw;
+  margin:0;
+  padding:0;
+}
+
+li a{
+  color:white;
+  text-decoration: none;
+}
+
+li a:hover{
+  color:#D6AD60;
+}
+
+li{
+  color:white;
+  list-style-type: none;
+  /* border:solid 1px; */
+  font-family: 'roman-italic';
+  font-size: 2vw;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carte{
+  width:180px;
+}
+
+.reservations{
+  width:180px;
+  padding-left: 60px;
+}
+
+.connexion{
+  display: flex;
+  justify-content: flex-end;
+  width:180px;
+}
+
+.separation{
+  width:98vw;
+  margin-top: 30px;
+  border:solid 2px #D6AD60;
+}
+
+
+img.table{
+  width:98vw;
+}
+
+p.mot-du-chef{
+  color:#D6AD60;
+  font-family: rasa;
+  font-size: 2vw;
+  width:80vw;
+  margin-top: 70px;
+  margin-bottom: 0;
+  /* border:solid 1px; */
+}
+
+#cochon{
+  width:50vw;
+  
+}
+
+#sandre, #ratatouille, #ragout, #scone, #creme{
+  width:50vw;
+  margin-top: -40px;
+  border-radius: 10px;
+}
+
+#cochon img, #sandre img, #ratatouille img, #ragout img, #scone img, #creme img{
+  width:100%;
+  box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
+  border-radius: 5px;
+}
+
+#texte-cochon, #texte-sandre, #texte-ratatouille, #texte-ragout, #texte-scone, #texte-creme{
+  background-color: rgba(214, 173, 96, 0.5);
+  display:flex;
+  justify-content: center;
+  position:relative;
+  text-align: center;
+  color:#122620;
+  font-family:'roman-italic' ;
+  font-size: 2em;
+  /* border:solid 1px; */
+  width: 100%;
+  top:512px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+#texte-cochon{
+  top: 486px;
+}
+
+#texte-ratatouille{
+  top: 576px;
+}
+
+button.reserver{
+  cursor: pointer;
+  background-color: #D6AD60 ;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  width: 150px;
+  height: 70px;
+  border:solid 4px #B68D40;
+  border-radius: 15px;
+  font-family: 'rasa';
+  font-size: 1.3em;
+}
+
+button.reserver:hover{
+  background-color: #B68D40; 
+  border:solid 4px #D6AD60;
+}
+
+h1.titre-adresse{
+  font-size: 3vw;
+  margin-top: 70px;
+}
+
+h2.titre-contact{
+  color:#D6AD60;
+}
+
+p.adresse, p.contact{
+  text-align: center;
+  color:white;
+  font-family: 'rasa';
+  font-size: 1.1em;
+}
+
+p a{
+  color:white;
+}
+
+h1.horaires{
+  font-family: 'puritan';
+  margin-top: 70px;
+}
+
+.petite-separation{
+  border:solid 1px #D6AD60;
+  width:10vw;
+  margin-top: 20px;
+}
+
+.jours-heures{
+  display: flex;
+  margin-top: 30px;
+}
+
+.jours p{
+  color:white;
+}
+
+em{
+  color:#122620;
+}
+
+.heures{
+  color:#D6AD60;
+  margin-left:80px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 2px red; */
+  width:98vw;
+  margin-top: 30px;
+}
+
+.logos-footer{
+  display: flex;
+  width:50vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  /* border:solid 1px white; */
+}
+
+img.logo-facebook, .logo-instagram{
+  height: 70px;
+  border: solid 1px #D6AD60;
+  border-radius: 15px;
+}
+
+
+
+
+
+
