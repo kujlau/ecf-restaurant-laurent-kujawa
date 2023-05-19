@@ -29,9 +29,6 @@
 
 body{
   background-color: #122620;
-  
-  margin:0;
-  padding:0;
 }
 
 body, h1, h2{
@@ -106,11 +103,7 @@ li{
   font-family: 'roman-italic';
   font-size: 2vw;
 }
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .carte{
   width:180px;
@@ -125,6 +118,12 @@ main{
   display: flex;
   justify-content: flex-end;
   width:180px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .separation{
@@ -262,7 +261,7 @@ footer{
   align-items: center;
   /* border: solid 2px red; */
   width:98vw;
-  margin-top: 30px;
+  
 }
 
 .logos-footer{
