@@ -58,13 +58,13 @@ header{
 .nom-restaurant{
   font-size: 4vw;
   width:410px;
+  text-align: center;
 }
 
 .nom-chef{
-  display:flex;
-  justify-content: center;
   width:410px;
   font-size: 3vw;
+  text-align: center;
 }
 
 img.logo{
@@ -104,7 +104,6 @@ li{
   font-size: 2vw;
 }
 
-
 .carte{
   width:180px;
 }
@@ -130,6 +129,87 @@ main{
   width:98vw;
   margin-top: 30px;
   border:solid 2px #D6AD60;
+}
+
+h1.chef-propose{
+  text-align: center;
+  width:400px;
+  margin-top: 70px;
+  font-family: 'cormorant-italic';
+  font-size: 3.5vw;
+}
+
+ul.carte-menus{
+  /* border: solid 2px red; */
+  width:20vw;
+  margin-top: 20px;
+}
+
+.menu{
+  background-image: url("images/fond-menu.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  border-radius:5px;
+  box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
+  width: 60vw;
+}
+
+.sep-haut{
+  width:70%;
+  margin-top: 100px;
+}
+
+h1.titre-menus{
+  color:#122620;
+  font-family:'roman-italic';
+  font-weight: lighter;
+  font-size: 3.9vw;
+}
+
+.sep-bas{
+  width:70%;
+  margin-bottom: 100px;
+}
+
+.wrapper{
+  width:70%;
+  margin-bottom: 100px;
+}
+
+.wrapper > h3{
+  color:#122620;
+  text-align: center;
+  font-family:'rasa-italic';
+  font-size: 2vw;
+  font-weight: lighter;
+}
+
+h2.ou{
+  margin-bottom: 30px;
+}
+
+h3.tarif{
+  font-size: 3vw;
+}
+
+.wrapper > p{
+  color:#122620;
+  font-family: 'rasa';
+  font-size: 1.3vw;
+}
+
+p.voir{
+ text-align: center;
+}
+
+.wrapper > h2{
+  text-align: center;
+  color:#122620;
+  font-family: 'puritan-italic';
+  font-size: 2.5vw;
+  font-weight: lighter;
 }
 
 footer{
