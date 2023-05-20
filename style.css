@@ -148,8 +148,8 @@ p.mot-du-chef{
 }
 
 #cochon{
+  background-image: url('images/images-accueil/cochon.jpg');
   width:50vw;
-  
 }
 
 #sandre, #ratatouille, #ragout, #scone, #creme{
@@ -158,17 +158,16 @@ p.mot-du-chef{
   border-radius: 10px;
 }
 
-#cochon img, #sandre img, #ratatouille img, #ragout img, #scone img, #creme img{
+#sandre img, #ratatouille img, #ragout img, #scone img, #creme img{
   width:100%;
   box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
   border-radius: 5px;
 }
 
-#texte-cochon, #texte-sandre, #texte-ratatouille, #texte-ragout, #texte-scone, #texte-creme{
+#texte-sandre, #texte-ratatouille, #texte-ragout, #texte-scone, #texte-creme{
   background-color: rgba(214, 173, 96, 0.5);
   display:flex;
   justify-content: center;
-  position:relative;
   text-align: center;
   color:#122620;
   font-family:'roman-italic' ;

@@ -186,58 +186,139 @@ form{
   background-color: #D6AD60;
   display: flex;
   align-items: center;
-  height:45px;
+  height:3vw;
 }
 
 .couverts > img, .date> img{
-  height:30px;
+  height:2vw;
 }
 
 select, input{
   background-color: #D6AD60;
   color:#122620;
-  width:20vw;
-  height:40px;
+  width:22vw;
+  height:1.5em;
   padding-left: 20px;
   font-family: 'puritan-italic';
-  font-size: 20px;
+  font-size: 1.5vw;
   border:none;
 }
 
-h2.midi, h2.soir{
+h2.titre-midi, h2.titre-soir, h2.titre-donnees{
   text-align: center;
   color:#D6AD60;
   font-family:'puritan-italic';
+  font-size:2vw;
   margin-bottom: 30px;
 }
 
-.buttons-midi, .buttons-soir{
+.heures-midi, .heures-soir{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width:100%;
+  width:90%;
   margin-bottom: 40px;
 }
 
 .premiere-ligne{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width:100%;
+}
+
+.deuxieme-ligne-midi{
+  display: flex;
+  justify-content: space-between;
+  width:38.5%;
+}
+
+.deuxieme-ligne-soir{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
   margin-bottom: 20px;
 }
 
-.dernier-button{
-  width:90%;
-  margin-top: 20px;
+.troisieme-ligne-soir{
+  width:100%;
 }
 
 button{
-  width:150px;
-  height:75px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:9.75vw;
+  height:auto;
   background-color: #B68D40;
-  margin-left: 15px;
+  border: none;
   border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
 }
-button.sans-left{
-  margin:0;
+
+button > p{
+  color:#122620;
+  font-family: 'rasa';
+  font-size: 1.5vw;
+}
+
+button:hover{
+  background-color: #D6AD60;
+}
+
+form.donnees{
+  display: flex;
+  flex-direction: column;
+}
+
+.prenom-nom, .tel-email{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tel-email{
+  margin-bottom: 20px;
+}
+
+.prenom, .nom, .tel, .email{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+label{
+  color:#D6AD60;
+}
+
+textarea{
+  background-color: #D6AD60;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 500px;
+}
+
+.checkbox{
+  height:18px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="checkbox"]{
+  accent-color:white;
+  width:15px;
+}
+
+.text-checkbox{
+  margin-top: 0.2em;
+  font-family: 'rasa';
+  font-size: 1.2vw;
+}
+
+button.reserver:hover{
+  background-color: #B68D40; 
+  border:solid 4px #D6AD60;
 }
 
 .separation{
