@@ -29,6 +29,9 @@
 
 body{
   background-color: #122620;
+
+  margin:0;
+  padding:0;
 }
 
 body, h1, h2{
@@ -103,7 +106,11 @@ li{
   font-family: 'roman-italic';
   font-size: 2vw;
 }
-
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .carte{
   width:180px;
@@ -118,12 +125,6 @@ li{
   display: flex;
   justify-content: flex-end;
   width:180px;
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .separation{
@@ -147,15 +148,10 @@ p.mot-du-chef{
   /* border:solid 1px; */
 }
 
-#cochon{
-  background-image: url('images/images-accueil/cochon.jpg');
-  width:50vw;
-}
 
 #sandre, #ratatouille, #ragout, #scone, #creme{
   width:50vw;
-  margin-top: -40px;
-  border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 #sandre img, #ratatouille img, #ragout img, #scone img, #creme img{
@@ -164,15 +160,15 @@ p.mot-du-chef{
   border-radius: 5px;
 }
 
-#texte-sandre, #texte-ratatouille, #texte-ragout, #texte-scone, #texte-creme{
+/* #texte-cochon, #texte-sandre, #texte-ratatouille, #texte-ragout, #texte-scone, #texte-creme{
   background-color: rgba(214, 173, 96, 0.5);
   display:flex;
   justify-content: center;
+  position:relative;
   text-align: center;
   color:#122620;
   font-family:'roman-italic' ;
   font-size: 2em;
-  /* border:solid 1px; */
   width: 100%;
   top:512px;
   border-radius: 0px 0px 5px 5px;
@@ -184,7 +180,7 @@ p.mot-du-chef{
 
 #texte-ratatouille{
   top: 576px;
-}
+} */
 
 button.reserver{
   cursor: pointer;
@@ -260,7 +256,7 @@ footer{
   align-items: center;
   /* border: solid 2px red; */
   width:98vw;
-  
+  margin-top: 30px;
 }
 
 .logos-footer{
@@ -277,9 +273,3 @@ img.logo-facebook, .logo-instagram{
   border: solid 1px #D6AD60;
   border-radius: 15px;
 }
-
-
-
-
-
-
