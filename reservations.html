@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reservations.css">
+    <link rel="icon" href="images/favicon.ico">
   </head>
   <body>
     <header>
@@ -19,9 +20,9 @@
           <a href="carte.html">Carte & Menus</a> 
         </li>
         <li class="reservations">
-          <a href="reservations.html">Réservations</a> 
+          <a href="reservations.html">Réservation</a> 
         </li>
-        <li class="connexion">
+        <li id="connexion">
           <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
         </li>
       </ul>
@@ -119,13 +120,15 @@
           <textarea></textarea>
           <div class="checkbox">
             <input type="checkbox" id="checkbox">
-            <label class="text-checkbox">En cochant cette case, j'accepte que ces données soient utilisées pour 
+            <p class="text-checkbox">En cochant cette case, j'accepte que ces données soient utilisées pour 
               la gestion de cette réservation.
-            </label>
+            </p>
           </div>
-          <button class="reserver" type="button">Valider</button>
+          <div class="centre-button">
+            <button class="valider" type="button">Valider</button>
+          </div>
+          <p class="champs">Merci de renseigner les champs * </p>
           
-          <!-- <button></button> -->
         </form>
         
       </div>

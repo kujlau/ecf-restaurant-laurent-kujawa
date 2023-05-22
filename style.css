@@ -106,11 +106,6 @@ li{
   font-family: 'roman-italic';
   font-size: 2vw;
 }
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .carte{
   width:180px;
@@ -118,13 +113,18 @@ main{
 
 .reservations{
   width:180px;
-  padding-left: 60px;
 }
 
-.connexion{
+#connexion{
   display: flex;
   justify-content: flex-end;
   width:180px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .separation{
@@ -144,43 +144,64 @@ p.mot-du-chef{
   font-size: 2vw;
   width:80vw;
   margin-top: 70px;
-  margin-bottom: 0;
+  margin-bottom: 70px;
   /* border:solid 1px; */
 }
 
-
-#sandre, #ratatouille, #ragout, #scone, #creme{
-  width:50vw;
-  margin-bottom: 40px;
+#cochon{
+  background-image: url(images/images-accueil/cochon-de-lait.jpg);
 }
 
-#sandre img, #ratatouille img, #ragout img, #scone img, #creme img{
-  width:100%;
+#sandre{
+  background-image: url(images/images-accueil/filet-sandre.jpg);
+}
+
+#ratatouille{
+  background-image: url(images/images-accueil/ratatouille-revisitee.jpg);
+}
+
+#ragout{
+  background-image: url(images/images-accueil/ragout.jpg);
+}
+
+#scone{
+  background-image: url(images/images-accueil/scone.jpg);
+}
+
+#creme{
+  background-image: url(images/images-accueil/creme.jpg);
+}
+
+
+#cochon, #sandre, #ratatouille, #ragout, #scone, #creme{
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-size: 100%;
+  width:700px;
+  height:466px;
+  margin-bottom: 40px;
   box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
+}
+
+.texte{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+#cochon p, #sandre p, #ratatouille p, #ragout p, #scone p, #creme p{
+  color:#122620;
+  font-family:'roman-italic';
+  font-size: 2em;
+  text-align: center;
+  background-color:rgba(214, 173, 96, 0.5) ;
+  box-shadow: 0px 0px 20px  rgba(18, 38, 32, 0.5);
+  width:50%;
   border-radius: 5px;
 }
-
-/* #texte-cochon, #texte-sandre, #texte-ratatouille, #texte-ragout, #texte-scone, #texte-creme{
-  background-color: rgba(214, 173, 96, 0.5);
-  display:flex;
-  justify-content: center;
-  position:relative;
-  text-align: center;
-  color:#122620;
-  font-family:'roman-italic' ;
-  font-size: 2em;
-  width: 100%;
-  top:512px;
-  border-radius: 0px 0px 5px 5px;
-}
-
-#texte-cochon{
-  top: 486px;
-}
-
-#texte-ratatouille{
-  top: 576px;
-} */
 
 button.reserver{
   cursor: pointer;
@@ -201,7 +222,7 @@ button.reserver:hover{
 }
 
 h1.titre-adresse{
-  font-size: 3vw;
+  font-size: 3em;
   margin-top: 70px;
 }
 

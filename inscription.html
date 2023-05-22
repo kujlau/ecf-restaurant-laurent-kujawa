@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Le Quai Antique</title>
+    <meta name="description" content="Le nouveau restaurant du Chef Arnaud Michant">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="inscription.css">
+    <link rel="icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1 class="nom-restaurant">Le Quai Antique</h1>
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant une colonne antique avec les initiales Q et A."></a>
+      <h1 class="nom-chef">Arnaud Michant</h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="carte">
+          <a href="carte.html">Carte & Menus</a> 
+        </li>
+        <li class="reservations">
+          <a href="reservations.html">Réservation</a> 
+        </li>
+        <li id="connexion">
+          <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="separation"></div>
+      <h1 class="titre-inscription">Inscription</h1>
+      <div class="general">
+        <form>
+          <label>
+            Civilité*
+            <select>
+              <option value="1">Madame</option> 
+              <option value="2">Monsieur</option> 
+            </select>
+          </label>
+          <label>
+            Prénom*
+            <input id="Prenom">
+          </label>
+          <label>
+            Nom*
+            <input id="nom">
+          </label>
+          <label>
+            Téléphone
+            <input id="tel">
+          </label>
+          <label>
+            @mail*
+            <input id="email">
+          </label>
+          <label>
+            Mot de passe*
+            <div class="visible">
+              <input id="mot-de-passe">
+              <img id="mdp-visible" src="images/non-visible.jpg" alt="oeil fermé">
+            </div>
+          </label>
+          <h2 class="facilite">Afin de  facilité les réservations</h2>
+          <label>
+            Allergies alimentaires
+            <input id="allergies">
+          </label>
+          <label>
+            Nombre de personnes par repas
+            <select>
+              <option value="1">1</option> 
+              <option value="2">2</option> 
+              <option value="3">3</option> 
+              <option value="4">4</option>
+              <option value="5">5</option> 
+              <option value="6">6</option>
+              <option value="7">7</option> 
+              <option value="8">8</option>
+            </select>
+          </label>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <p class="text-checkbox">En cochant cette case, j'accepte que ces données soient utilisées pour 
+              la gestion de cette réservation.
+            </p>
+          </div>
+          
+          <button type="button">S'inscrire</button>
+          <p class="champs">Merci de renseigner les champs * </p>
+        </form>
+        <h3 class="validation">Vous êtes inscrit(e)! Vous pouvez vous <a href="connexion.html">connecter</a>
+          .</h2>
+      </div>
+      <div class="separation"></div>
+    </main>
+
+    <footer>
+      <div class="logos-footer">
+        <a href=""><img class="logo-facebook" src="images/faceb.jpg" title="NOTRE PAGE FACEBOOK" alt="logo facebook"></a>
+        <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo du site"></a>
+        <a href=""><img class="logo-instagram" src="images/insta.jpg" title="NOTRE INSTAGRAM" alt="logo instagram"></a>
+      </div>
+      <p class="copyright">Copyright-2023-laurent kujawa</p>
+    </footer>

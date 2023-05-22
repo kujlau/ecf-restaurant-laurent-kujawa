@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <title>Le Quai Antique</title>
@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
   </head>
   <body>
     <header>
@@ -18,8 +19,8 @@
         <li class="carte">
           <a href="carte.html">Carte & Menus</a> 
         </li>
-        <li class="reservations">
-          <a href="reservations.html">Réservations</a> 
+        <li id="reservations">
+          <a href="reservations.html">Réservation</a> 
         </li>
         <li class="connexion">
           <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
@@ -37,21 +38,35 @@
         une équipe de qualité et expérimentée qui saura ravir vos papilles.
         Le Chef voit son nouvel établissement comme une promesse d'un voyage dans son univers culinaire.
       </p>
-    
+      <div id="cochon">
+        <div class="texte">
+          <p>Cochon de lait et son Mille-feuille dauphinois</p>
+        </div>
+      </div>
       <div id="sandre">
-        <img src="images/images-accueil/filet-sandre.jpg" alt="assiette de filet de sandre">
+        <div class="texte">
+          <p>Filet de sandre et friands</p>
+        </div>
       </div>
       <div id="ratatouille">
-        <img src="images/images-accueil/ratatouille.jpg" alt="assiette de ratatouille">
+        <div class="texte">
+          <p>Ratatouille revisitée</p>
+        </div>
       </div> 
       <div id="ragout">
-        <img src="images/images-accueil/ragout.jpg" alt="assiette de ragout de boeuf">
+        <div class="texte">
+          <p>Ragoût de boeuf</p>
+        </div>
       </div>
       <div id="scone">
-        <img src="images/images-accueil/scone.jpg" alt="assiette de scone aux fruits">
+        <div class="texte">
+          <p>Scone rouge</p>
+        </div>
       </div>
       <div id="creme">
-        <img src="images/images-accueil/creme.jpg" alt="assiette de crème brulée ">
+        <div class="texte">
+          <p>Crème brûlée aux myrtilles sauvages</p>
+        </div>
       </div>
       <button class="reserver" type="button">Réserver une table</button> 
       <div class="separation"></div>

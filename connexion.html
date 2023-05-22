@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="connexion.css">
+    <link rel="icon" href="images/favicon.ico">
   </head>
   <body>
     <header>
@@ -19,16 +20,40 @@
           <a href="carte.html">Carte & Menus</a> 
         </li>
         <li class="reservations">
-          <a href="reservations.html">Réservations</a> 
+          <a href="reservations.html">Réservation</a> 
         </li>
-        <li class="connexion">
+        <li id="connexion">
           <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
         </li>
       </ul>
     </nav>
-    <div class="separation"></div>
-    <footer>
+
+    <main>
       <div class="separation"></div>
+      <h1 class="titre-connexion">Connexion</h1>
+      <p>Si vous n'êtes pas inscript(e), <a href="inscription.html"><u>cliquez ici</u></a></p>
+      <div class="general">
+        <form>
+          <label>
+            @mail
+            <input id="email">
+          </label>
+          <label>
+            Mot de passe
+            <div class="visible">
+              <input id="mot-de-passe">
+              <img id="mdp-visible" src="images/non-visible.jpg" alt="oeil fermé">
+            </div>
+          </label>
+          <button type="button">Me connecter</button>
+        </form>
+        <h3><a href="mot-de-passe-perdu.html">Mot de passe perdu</a></h3>
+        <p>Merci de renseigner les champs * </p>
+      </div>
+      <div class="separation"></div>
+    </main>
+    
+    <footer>
       <div class="logos-footer">
         <a href=""><img class="logo-facebook" src="images/faceb.jpg" title="NOTRE PAGE FACEBOOK" alt="logo facebook"></a>
         <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo du site"></a>
