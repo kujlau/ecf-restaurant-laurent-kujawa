@@ -87,7 +87,7 @@ ul{
   padding:0;
 }
 
-li a{
+li > a{
   color:white;
   text-decoration: none;
 }
@@ -101,23 +101,19 @@ li{
   list-style-type: none;
   /* border:solid 1px; */
   font-family: 'roman-italic';
-  font-size: 2vw;
+  font-size: 1.5em;
 }
 
-
-.carte{
-  width:180px;
+.carte, .reservations, #connexion{
+  text-align: center;
 }
 
-.reservations{
-  width:180px;
-  padding-left: 60px;
+.header-mobile{
+  display: none;
 }
 
-.connexion{
-  display: flex;
-  justify-content: flex-end;
-  width:180px;
+.nav-mobile{
+  display: none;
 }
 
 main{
@@ -142,10 +138,10 @@ main{
   
   h1.titre-connexion{
     text-align: center;
-    width:400px;
+    width:300px;
     margin-top: 70px;
     font-family: 'cormorant-italic';
-    font-size: 3.5vw;
+    font-size: 2.5em;
     color:white;
   }
   
@@ -161,11 +157,10 @@ main{
   }
   
   #form-perdu{
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-top:70px*/
-    display: none;
+    margin-top:70px
   }
   
   label{
@@ -198,7 +193,7 @@ main{
     height:20px;
   }
   
-  button{
+  button#valide{
     background-color: #D6AD60;
     border:solid 4px #B68D40;
     width: 120px;
@@ -210,31 +205,34 @@ main{
     margin-bottom: 30px;
   }
   
-  button:hover{
+  button#valide:hover{
     background-color: #B68D40;
     border:solid 4px #D6AD60;
   }
   
-  .general > h3, .general > p{
+  .general > h3, p{
     color:#D6AD60;
     font-family:'rasa';
   }
   
-  .general > p{
-    font-size: 2em;
+  .general > h3{
+    font-size: 1.8em;
   }
   
-  .general > p{
-    font-size: 1em ;
+  .form-perdu> p{
+    font-size: 2em;
+    color:#D6AD60;
+    font-family:'rasa';
   }
 
   h3#validation{
     color:#D6AD60;
     font-family: 'rasa';
-    font-size:1.5em;
+    font-size:1.3em;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    width:350px;
   }
 
 
@@ -261,3 +259,63 @@ img.logo-facebook, .logo-instagram{
   border: solid 1px #D6AD60;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 600px){
+  header{
+    display:none;
+  }
+  nav{
+    display:none;
+  }
+  .header-mobile{
+    display:flex;
+    justify-content: space-between;
+  }
+  #btn-menu{
+    background-image: url("images/couvertburger.jpg");
+    background-position: center;
+    background-size: 100%;
+    border:none;
+    width:80px;
+    height:80px;
+    margin-right:10vw;
+  }
+  #nav-mobile{
+    display:none;
+    align-items: center;
+    background-image: url('images/fond-menu.jpg');
+    position:absolute;
+    margin-left:50vw;
+    width:50%;
+    height:calc(98vh - 170px);
+  }
+  ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:98%;
+    height:98%;
+  }
+  li{
+    
+    font-size:2em;
+    width:100%;
+    text-align: center;
+  }
+
+  li > a{
+    color:#122620;
+  }
+
+  .general{
+    width: 80vw;
+  }
+
+  #email{
+    width:235px;
+  }
+
+  h3#validation{
+    width:300px;
+  }
+} 

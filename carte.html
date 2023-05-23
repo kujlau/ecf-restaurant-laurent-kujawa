@@ -15,7 +15,7 @@
       <h1 class="nom-chef">Arnaud Michant</h1>
     </header>
     <nav>
-      <ul>
+      <ul class="ul-desktop">
         <li class="carte">
           <a href="carte.html">Carte & Menus</a> 
         </li>
@@ -25,6 +25,21 @@
         <li id="connexion">
           <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
         </li>
+      </ul>
+    </nav>
+    <header class="header-mobile">
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant
+         une colonne antique avec les initiales Q et A."></a>
+      <button  type="button" id="btn-menu"></button>  
+    </header>
+    <nav id="nav-mobile">
+      <ul class="ul-mobile">
+        <li><a href="carte.html">Carte</a></li>
+          <li><a href="menus.html">Menus</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li><a href="reservations.html">Réservation</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li id="connexion"><a href="connexion.html">Se connecter</a></li>
       </ul>
     </nav>
 
@@ -121,4 +136,8 @@
       </div>
       <p class="copyright">Copyright-2023-laurent kujawa</p>
     </footer>
-    
+
+    <script src="menu-mobile.js"></script>
+
+  </body>
+</html>   

@@ -87,7 +87,7 @@ ul{
   padding:0;
 }
 
-li a{
+li > a{
   color:white;
   text-decoration: none;
 }
@@ -101,23 +101,19 @@ li{
   list-style-type: none;
   /* border:solid 1px; */
   font-family: 'roman-italic';
-  font-size: 2vw;
+  font-size: 1.5em;
 }
 
-
-.carte{
-  width:180px;
+.carte, .reservations, #connexion{
+  text-align: center;
 }
 
-.reservations{
-  width:180px;
-  padding-left: 60px;
+.header-mobile{
+  display: none;
 }
 
-.connexion{
-  display: flex;
-  justify-content: flex-end;
-  width:180px;
+.nav-mobile{
+  display: none;
 }
 
 main{
@@ -140,11 +136,18 @@ main > p > a{
 
 h1.titre-reserve{
   text-align: center;
-  width:400px;
+  width:300px;
   margin-top: 70px;
   font-family: 'cormorant-italic';
-  font-size: 3.5vw;
+  font-size: 2.5em;
   color:white;
+}
+
+p.sous-titre-reserve{
+  font-family: 'rasa';
+  font-size: 1.2em;
+  text-align: center;
+  
 }
 
 
@@ -159,13 +162,19 @@ h1.titre-reserve{
   width: 60vw;
 }
 
-.general > p{
+#cachee > p{
   color:#D6AD60;
   font-family: 'rasa';
-  font-size: 1.3vw;
+  font-size: 1.2em;
   text-align: center;
   margin-top: 70px;
   margin-bottom: 50px;
+}
+
+#cachee{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form{
@@ -186,23 +195,38 @@ form{
 .couverts, .date{
   background-color: #D6AD60;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height:3vw;
+  width:25vw;
+  height:2.9em;
 }
 
-.couverts > img, .date> img{
-  height:2vw;
+.couverts > img, .date > img{
+  height:2.3em;
 }
 
-select, input{
+select, input.date, input{
   background-color: #D6AD60;
   color:#122620;
-  width:22vw;
-  height:1.5em;
   padding-left: 20px;
   font-family: 'puritan-italic';
   font-size: 1.5vw;
   border:none;
+}
+
+select{
+  width:21.5vw;
+  height:2em;
+}
+
+input.date{
+  width:20vw;
+  height:2em;
+}
+
+input{
+  width:20vw;
+  height:2em;
 }
 
 h2.titre-midi, h2.titre-soir, h2.titre-donnees{
@@ -222,20 +246,18 @@ h2.titre-midi, h2.titre-soir, h2.titre-donnees{
 
 .premiere-ligne{
   display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
   width:100%;
 }
 
 .deuxieme-ligne-midi{
   display: flex;
-  justify-content: space-between;
-  width:38.5%;
+  width:100%;
 }
+
 
 .deuxieme-ligne-soir{
   display: flex;
-  justify-content: space-between;
   width:100%;
   margin-bottom: 20px;
 }
@@ -244,36 +266,41 @@ h2.titre-midi, h2.titre-soir, h2.titre-donnees{
   width:100%;
 }
 
-button{
+button.heures{
   display:flex;
   justify-content: center;
   align-items: center;
-  width:9.75vw;
+  width:8vw;
   height:auto;
   background-color: #B68D40;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
+  margin-right: 2vw;
 }
 
-button > p{
+button.heures > p{
   color:#122620;
   font-family: 'rasa';
-  font-size: 1.5vw;
+  font-size: 2em;
 }
 
-button:hover{
+button.heures:hover{
   background-color: #D6AD60;
 }
 
-button:focus{
+button.heures:focus{
   background-color: #D6AD60;
 }
 
 form.donnees{
   display: flex;
   flex-direction: column;
+}
+
+form.donnees > select{
+  width:21.5vw;
 }
 
 .prenom-nom, .tel-email{
@@ -304,22 +331,24 @@ textarea{
 }
 
 .checkbox{
-  height:18px;
+  height:40px;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width:300px;
 }
 
 input[type="checkbox"]{
   accent-color:white;
-  width:20px;
+  width:50px;
+  margin-right: 10px;
 }
 
 .text-checkbox{
   color:#D6AD60;
   font-family: 'rasa';
-  font-size: 1.2vw;
+  font-size: 1.3em;
 }
 
 p.champs{
@@ -332,14 +361,15 @@ p.champs{
   justify-content: center;
 }
 
-button.valider{
+button#valider{
   background-color: #D6AD60;
   border:solid 4px #B68D40;
+  border-radius: 5px;
   width: 120px;
   height: 50px;
 }
 
-button.valider:hover{
+button#valider:hover{
   background-color: #B68D40; 
   border:solid 4px #D6AD60;
 }
@@ -348,6 +378,15 @@ button.valider:hover{
   width:98vw;
   margin-top: 30px;
   border:solid 2px #D6AD60;
+}
+
+h3#validation{
+  color:#D6AD60;
+  font-family: 'rasa';
+  font-size:1.5em;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
@@ -374,3 +413,146 @@ img.logo-facebook, .logo-instagram{
   border: solid 1px #D6AD60;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 600px){
+  header{
+    display:none;
+  }
+  nav{
+    display:none;
+  }
+  .header-mobile{
+    display:flex;
+    justify-content: space-between;
+  }
+  #btn-menu{
+    background-image: url("images/couvertburger.jpg");
+    background-position: center;
+    background-size: 100%;
+    border:none;
+    width:80px;
+    height:80px;
+    margin-right:10vw;
+  }
+  #nav-mobile{
+    display:none;
+    align-items: center;
+    background-image: url('images/fond-menu.jpg');
+    position:absolute;
+    margin-left:50vw;
+    width:50%;
+    height:calc(98vh - 170px);
+  }
+  ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:98%;
+    height:98%;
+  }
+  li{
+    
+    font-size:2em;
+    width:100%;
+    text-align: center;
+  }
+
+  li > a{
+    color:#122620;
+  }
+
+  .general{
+    width:80vw;
+  }
+
+  form{
+    flex-direction: column;
+    width:90%;
+  }
+
+  button.heures, .heures-dernier{
+    width:3em;
+    height:3em;
+    border-radius: 5px;
+  }
+
+  button.heures > p{
+    font-size: 1.5em;
+  }
+
+  .heures-dernier{
+    margin-left: 0;
+  }
+
+  .couverts, .date{
+    width:100%;
+    height:2.9em;
+    margin-bottom: 0.5em;
+  }
+  
+  .couverts > img, .date > img{
+    height:2.3em;
+  }
+
+  input[type="text"],  input[type="tel"],  input[type="email"]
+  {
+      font-size:20px;
+  }
+
+  select{
+    width:80%;
+    height:1.5em;
+    font-size: 1.5em;
+  }
+  
+  input.date{
+    width:74%;
+    height:1.5em;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  input.date > p{
+    font-size: 5em;
+  }
+  
+  textarea{
+    font-size: 1.5em;
+  }
+  
+  input{
+    width:90%;
+    height:2em;
+  }
+
+  .prenom-nom, .tel-email{
+    flex-direction: column;
+    width:100%;
+  } 
+
+  form.donnees > select{
+    width:70vw;
+    height:2em;
+  }
+
+  h2.titre-midi, h2.titre-soir, h2.titre-donnees{
+    font-size:5vw;
+  }
+
+  .text-checkbox{
+    color:#D6AD60;
+    font-family: 'rasa';
+    font-size: 3vw;
+  }
+
+  input[type=checkbox]{
+    width: 50px;
+  }
+
+  .checkbox{
+    width:300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+}  

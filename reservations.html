@@ -27,110 +27,131 @@
         </li>
       </ul>
     </nav>
+    <header class="header-mobile">
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant
+         une colonne antique avec les initiales Q et A."></a>
+      <button id="btn-menu"></button>  
+    </header>
+    <nav id="nav-mobile">
+      <ul>
+        <li><a href="carte.html">Carte</a></li>
+          <li><a href="menus.html">Menus</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li><a href="reservations.html">Réservation</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li id="connexion"><a href="connexion.html">Se connecter</a></li>
+      </ul>
+    </nav>
+
     <main>
       <div class="separation"></div>
       <h1 class="titre-reserve">Votre réservation</h1>
-      <p><a href="connexion.html">Connectez-vous</a> ou continuez sur cette page.</p>
+      <p class="sous-titre-reserve"><a href="connexion.html">Connectez-vous</a> ou continuez sur cette page.</p>
       <div class="general">
-        <p>Merci d'avance de préciser en commentaire le nombre d'enfants présents à table (si il y en a) !<br>
-           Pour tout retard de plus de  20 min votre table sera donnée à d'autre client !!</p>
-        <div class="couvert-date">
-          <form>
-            <div class=couverts>
-              <img src="images/couvertico.jpg" alt="des couverts croisés">
-              <select>
-                <option value="1">1 couvert</option> 
-                <option value="2">2 couverts</option> 
-                <option value="3">3 couverts</option> 
-                <option value="4">4 couverts</option> 
-                <option value="5">5 couverts</option> 
-                <option value="6">6 couverts</option>
-                <option value="6">7 couverts</option>
-                <option value="6">8 couverts</option>
-              </select>
+        <div id="cachee">
+          <p>Merci d'avance de préciser en commentaire le nombre d'enfants présents à table (si il y en a) !<br>
+            Pour tout retard de plus de  20 min votre table sera donnée à d'autre client !!</p>
+          <div class="couvert-date">
+            <form>
+              <div class=couverts>
+                <img src="images/couvertico.jpg" alt="des couverts croisés">
+                <select>
+                  <option value="1">1 couvert</option> 
+                  <option value="2">2 couverts</option> 
+                  <option value="3">3 couverts</option> 
+                  <option value="4">4 couverts</option> 
+                  <option value="5">5 couverts</option> 
+                  <option value="6">6 couverts</option>
+                  <option value="6">7 couverts</option>
+                  <option value="6">8 couverts</option>
+                </select>
+              </div>
+              <div class="date">
+                <img src="images/dateico.jpg" alt="calendrier">
+                <input  class="date" type="date">
+              </div>
+            </form>
+            <h2 class="titre-midi"><u>Pour midi</u></h2>
+            <div class="heures-midi">
+              <div class="premiere-ligne">
+                <button class="heures"><p>12:00</p></button>
+                <button class="heures"><p>12:15</p></button>
+                <button class="heures"><p>12:30</p></button>
+                <button class="heures"><p>12:45</p></button>
+                <button class="heures"><p>13:00</p></button>
+              </div>
+              <div class="deuxieme-ligne-midi">
+                <button class="heures"><p>13:15</p></button>
+                <button class="heures"><p>13:30</p></button>
+              </div>
             </div>
-            <div class="date">
-              <img src="images/dateico.jpg" alt="calendrier">
-              <input type="date">
+            <h2 class="titre-soir"><u>Pour le soir</u></h2>
+            <div class="heures-soir">
+              <div class="premiere-ligne" >
+                <button class="heures"><p>19:00</p></button>
+                <button class="heures"><p>19:15</p></button>
+                <button class="heures"><p>19:30</p></button>
+                <button class="heures"><p>19:45</p></button>
+                <button class="heures"><p>20:00</p></button>
+              </div>
+              <div class="deuxieme-ligne-soir">
+                <button class="heures"><p>20:15</p></button>
+                <button class="heures"><p>20:30</p></button>
+                <button class="heures"><p>20:45</p></button>
+                <button class="heures"><p>21:00</p></button>
+                <button class="heures"><p>21:15</p></button>
+              </div>
+              <div class="troisieme-ligne-soir">
+                <button class="heures"><p>21:30</p></button>
+              </div>
             </div>
+          </div>
+          <h2 class="titre-donnees"><u>Vos données personnelles</u></h2>
+          <form class="donnees">
+            <label>Civilité</label>
+            <select>
+              <option value="1">Madame</option> 
+              <option value="2">Monsieur</option> 
+            </select>
+            <div class="prenom-nom">
+              <div class="prenom">
+                <label>Prénom*</label>
+                <input id="prenom" type="text">
+              </div>
+              <div class="nom">
+                <label>Nom*</label>
+                <input id="nom" type="text">
+              </div>
+            </div>
+            <div class="tel-email">
+              <div class="tel">
+                <label>Téléphone</label>
+                <input id="telephone" type="tel">
+              </div>
+              <div class="email">
+                <label>@mail*</label>
+                <input id="email" type="email">
+              </div>
+            </div>
+            <label>Message</label>
+            <textarea></textarea>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox">
+              <p class="text-checkbox">En cochant cette case, j'accepte que ces données soient utilisées pour 
+                la gestion de cette réservation.
+              </p>
+            </div>
+            <div class="centre-button">
+              <button id="valider" type="button">Valider</button>
+            </div>
+            <p class="champs">Merci de renseigner les champs * </p>
+            
           </form>
-          <h2 class="titre-midi"><u>Pour midi</u></h2>
-          <div class="heures-midi">
-            <div class="premiere-ligne">
-              <button class="heure-sans-left"><p>12:00</p></button>
-              <button><p>12:15</p></button>
-              <button><p>12:30</p></button>
-              <button><p>12:45</p></button>
-              <button><p>13:00</p></button>
-            </div>
-            <div class="deuxieme-ligne-midi">
-              <button class="heure-sans-left"><p>13:15</p></button>
-              <button><p>13:30</p></button>
-            </div>
-          </div>
-          <h2 class="titre-soir"><u>Pour le soir</u></h2>
-          <div class="heures-soir">
-            <div class="premiere-ligne" >
-              <button><p>19:00</p></button>
-              <button><p>19:15</p></button>
-              <button><p>19:30</p></button>
-              <button><p>19:45</p></button>
-              <button><p>20:00</p></button>
-            </div>
-            <div class="deuxieme-ligne-soir">
-              <button><p>20:15</p></button>
-              <button><p>20:30</p></button>
-              <button><p>20:45</p></button>
-              <button><p>21:00</p></button>
-              <button><p>21:15</p></button>
-            </div>
-            <div class="troisieme-ligne-soir">
-              <button><p>21:30</p></button>
-            </div>
-          </div>
-        </div>
-        <h2 class="titre-donnees"><u>Vos données personnelles</u></h2>
-        <form class="donnees">
-          <label>Civilité</label>
-          <select>
-            <option value="1">Madame</option> 
-            <option value="2">Monsieur</option> 
-          </select>
-          <div class="prenom-nom">
-            <div class="prenom">
-              <label>Prénom*</label>
-              <input id="prenom">
-            </div>
-            <div class="nom">
-              <label>Nom*</label>
-              <input id="nom">
-            </div>
-          </div>
-          <div class="tel-email">
-            <div class="tel">
-              <label>Téléphone</label>
-              <input id="telephone">
-            </div>
-            <div class="email">
-              <label>@mail*</label>
-              <input id="email">
-            </div>
-          </div>
-          <label>Message</label>
-          <textarea></textarea>
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox">
-            <p class="text-checkbox">En cochant cette case, j'accepte que ces données soient utilisées pour 
-              la gestion de cette réservation.
-            </p>
-          </div>
-          <div class="centre-button">
-            <button class="valider" type="button">Valider</button>
-          </div>
-          <p class="champs">Merci de renseigner les champs * </p>
-          
-        </form>
+        </div>   
         
+        <h3 id="validation">Votre commande à bien été validée. Si vous êtes inscript(e)
+          vous pourrez la retrouver dans votre espace personnel.
+        </h3>
       </div>
 
       <div class="separation"></div>
@@ -144,3 +165,9 @@
       </div>
       <p class="copyright">Copyright-2023-laurent kujawa</p>
     </footer>
+
+    <script src="menu-mobile.js"></script>
+    <script src="valid-reservation.js"></script>
+
+  </body>
+</html>  

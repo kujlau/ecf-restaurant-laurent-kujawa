@@ -27,12 +27,27 @@
         </li>
       </ul>
     </nav>
+    <header class="header-mobile">
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant
+         une colonne antique avec les initiales Q et A."></a>
+      <button id="btn-menu"></button>  
+    </header>
+    <nav id="nav-mobile">
+      <ul>
+        <li><a href="carte.html">Carte</a></li>
+          <li><a href="menus.html">Menus</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li><a href="reservations.html">Réservation</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li id="connexion"><a href="connexion.html">Se connecter</a></li>
+      </ul>
+    </nav>
 
     <main>
       <div class="separation"></div>
       <h1 class="titre-inscription">Inscription</h1>
       <div class="general">
-        <form>
+        <form id="form-inscription">
           <label>
             Civilité*
             <select>
@@ -42,24 +57,24 @@
           </label>
           <label>
             Prénom*
-            <input id="Prenom">
+            <input id="Prenom" type="text">
           </label>
           <label>
             Nom*
-            <input id="nom">
+            <input id="nom" type="text">
           </label>
           <label>
             Téléphone
-            <input id="tel">
+            <input id="tel" type="tel">
           </label>
           <label>
             @mail*
-            <input id="email">
+            <input id="email" type="email">
           </label>
           <label>
             Mot de passe*
             <div class="visible">
-              <input id="mot-de-passe">
+              <input id="mot-de-passe" type="password">
               <img id="mdp-visible" src="images/non-visible.jpg" alt="oeil fermé">
             </div>
           </label>
@@ -88,10 +103,10 @@
             </p>
           </div>
           
-          <button type="button">S'inscrire</button>
+          <button id="inscrire" type="button">S'inscrire</button>
           <p class="champs">Merci de renseigner les champs * </p>
         </form>
-        <h3 class="validation">Vous êtes inscrit(e)! Vous pouvez vous <a href="connexion.html">connecter</a>
+        <h3 id="validation">Vous êtes inscrit(e)! Vous pouvez vous <a href="connexion.html">connecter</a>
           .</h2>
       </div>
       <div class="separation"></div>
@@ -105,3 +120,8 @@
       </div>
       <p class="copyright">Copyright-2023-laurent kujawa</p>
     </footer>
+
+    <script src="menu-mobile.js"></script>
+    <script src="valid-inscription.js"></script>
+  </body>
+</html>   

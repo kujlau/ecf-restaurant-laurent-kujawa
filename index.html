@@ -11,7 +11,8 @@
   <body>
     <header>
       <h1 class="nom-restaurant">Le Quai Antique</h1>
-      <a href=""><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant une colonne antique avec les initiales Q et A."></a>
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant 
+        une colonne antique avec les initiales Q et A."></a>
       <h1 class="nom-chef">Arnaud Michant</h1>
     </header>
     <nav>
@@ -19,18 +20,33 @@
         <li class="carte">
           <a href="carte.html">Carte & Menus</a> 
         </li>
-        <li id="reservations">
+        <li class="reservations">
           <a href="reservations.html">Réservation</a> 
         </li>
-        <li class="connexion">
+        <li id="connexion">
           <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
         </li>
+      </ul>
+    </nav>
+    <header class="header-mobile">
+      <a href=""><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant
+         une colonne antique avec les initiales Q et A."></a>
+      <button type="button" id="btn-menu"></button>  
+    </header>
+    <nav id="nav-mobile">
+      <ul>
+        <li><a href="carte.html">Carte</a></li>
+          <li><a href="menus.html">Menus</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li><a href="reservations.html">Réservation</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li id="connexion"><a href="connexion.html">Se connecter</a></li>
       </ul>
     </nav>
 
     <main>
       <div class="separation"></div>
-      <img class="table" src="images/images-accueil/table.jpg" alt="">
+      <img class="table" src="images/images-accueil/table.jpg" alt="table de restaurant">
       <p class="mot-du-chef">
         Dans son nouveau restaurant de Chambéry,
         le Chef Arnaud Michant, vous accueil et vous connecte aux produits
@@ -38,33 +54,34 @@
         une équipe de qualité et expérimentée qui saura ravir vos papilles.
         Le Chef voit son nouvel établissement comme une promesse d'un voyage dans son univers culinaire.
       </p>
-      <div id="cochon">
-        <div class="texte">
+      <div id="plat_1">
+        <!-- <p >ICI</p> -->
+        <div href="javascript:;" onMouseEnter="console.log('uvtygv')" id="texte_plat_1">
           <p>Cochon de lait et son Mille-feuille dauphinois</p>
         </div>
       </div>
-      <div id="sandre">
-        <div class="texte">
+      <div id="plat_2">
+        <div id="texte_plat_2">
           <p>Filet de sandre et friands</p>
         </div>
       </div>
-      <div id="ratatouille">
-        <div class="texte">
+      <div id="plat_3">
+        <div id="texte_plat_3">
           <p>Ratatouille revisitée</p>
         </div>
       </div> 
-      <div id="ragout">
-        <div class="texte">
+      <div id="plat_4">
+        <div id="texte_plat_4">
           <p>Ragoût de boeuf</p>
         </div>
       </div>
-      <div id="scone">
-        <div class="texte">
+      <div id="plat_5">
+        <div id="texte_plat_5">
           <p>Scone rouge</p>
         </div>
       </div>
-      <div id="creme">
-        <div class="texte">
+      <div id="plat_6">
+        <div id="texte_plat_6">
           <p>Crème brûlée aux myrtilles sauvages</p>
         </div>
       </div>
@@ -121,6 +138,7 @@
       </div>
       <p class="copyright">Copyright-2023-laurent kujawa</p>
     </footer>
-
+    <script src="menu-mobile.js"></script>
+    <script src="over-images.js"></script>
   </body>
 </html>    

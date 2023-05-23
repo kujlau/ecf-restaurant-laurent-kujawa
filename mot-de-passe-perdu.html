@@ -27,6 +27,21 @@
         </li>
       </ul>
     </nav>
+    <header class="header-mobile">
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant
+         une colonne antique avec les initiales Q et A."></a>
+      <button id="btn-menu"></button>  
+    </header>
+    <nav id="nav-mobile">
+      <ul>
+        <li><a href="carte.html">Carte</a></li>
+          <li><a href="menus.html">Menus</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li><a href="reservations.html">Réservation</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li id="connexion"><a href="connexion.html">Se connecter</a></li>
+      </ul>
+    </nav>
 
     <main>
       <div class="separation"></div>
@@ -35,13 +50,13 @@
         <form>
           <div id="form-perdu">
             <label>
-              Mot de passe
+              @mail
               <div class="visible">
-                <input id="mot-de-passe">
+                <input id="email" type="email">
                 <img id="mdp-visible" src="images/non-visible.jpg" alt="oeil fermé">
               </div>
             </label>
-            <button type="button">Me connecter</button>
+            <button id="valide" type="button">Valider</button>
             <p>Merci de renseigner les champs * </p>
           </div>
           <h3 id="validation">Rendez-vous dans votre boîte @mail et cliquez sur le lien pour
@@ -60,3 +75,9 @@
       </div>
       <p class="copyright">Copyright-2023-laurent kujawa</p>
     </footer>
+
+    <script src="menu-mobile.js"></script>
+    <script src="valid-perdu.js"></script>
+
+  </body>  
+</html>

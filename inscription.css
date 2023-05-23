@@ -87,7 +87,7 @@ ul{
   padding:0;
 }
 
-li a{
+li > a{
   color:white;
   text-decoration: none;
 }
@@ -101,23 +101,19 @@ li{
   list-style-type: none;
   /* border:solid 1px; */
   font-family: 'roman-italic';
-  font-size: 2vw;
+  font-size: 1.5em;
 }
 
-
-.carte{
-  width:180px;
+.carte, .reservations, #connexion{
+  text-align: center;
 }
 
-.reservations{
-  width:180px;
-  padding-left: 60px;
+.header-mobile{
+  display: none;
 }
 
-.connexion{
-  display: flex;
-  justify-content: flex-end;
-  width:180px;
+.nav-mobile{
+  display: none;
 }
 
 main{
@@ -142,10 +138,10 @@ main{
   
   h1.titre-inscription{
     text-align: center;
-    width:400px;
+    width:300px;
     margin-top: 70px;
     font-family: 'cormorant-italic';
-    font-size: 3.5vw;
+    font-size: 2.5em;
     color:white;
   }
   
@@ -160,7 +156,7 @@ main{
     width: 60vw;
   }
   
-  form{
+  form#form-inscription{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +183,7 @@ main{
     background-color:#D6AD60;
     width:335.45px;
     height:28px;
-    /* border:none; */
+    border:none;
   }
   
   .visible{
@@ -205,9 +201,10 @@ main{
     color:#D6AD60;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 1.3em;
   }
   
-  button{
+  button#inscrire{
     background-color: #D6AD60;
     border:solid 4px #B68D40;
     width: 120px;
@@ -219,7 +216,7 @@ main{
     margin-bottom: 30px;
   }
   
-  button:hover{
+  button#inscrire:hover{
     background-color: #B68D40;
     border:solid 4px #D6AD60;
   }
@@ -238,29 +235,32 @@ main{
   }
 
   .checkbox{
-    height:18px;
+    height:40px;
     display: flex;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
+    width:300px;
   }
   
-  input#checkbox{
+  input[type="checkbox"]{
     accent-color:white;
-    width:20px;
+    width:50px;
+    margin-right: 10px;
+    border:none;
   }
   
   .text-checkbox{
     color:#D6AD60;
     font-family: 'rasa';
-    font-size: 1.2vw;
+    font-size: 1.2em;
   }
   p.champs{
     text-align: center;
     color:#D6AD60;
   }
 
-  h3.validation{
+  h3#validation{
     color:#D6AD60;
     font-family: 'rasa';
     font-size:1.5em;
@@ -293,3 +293,86 @@ img.logo-facebook, .logo-instagram{
   border: solid 1px #D6AD60;
   border-radius: 15px;
 }
+
+@media screen and (max-width: 600px){
+  header{
+    display:none;
+  }
+  nav{
+    display:none;
+  }
+  .header-mobile{
+    display:flex;
+    justify-content: space-between;
+  }
+  #btn-menu{
+    background-image: url("images/couvertburger.jpg");
+    background-position: center;
+    background-size: 100%;
+    border:none;
+    width:80px;
+    height:80px;
+    margin-right:10vw;
+  }
+  #nav-mobile{
+    display:none;
+    align-items: center;
+    background-image: url('images/fond-menu.jpg');
+    position:absolute;
+    margin-left:50vw;
+    width:50%;
+    height:calc(98vh - 170px);
+  }
+  ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:98%;
+    height:98%;
+  }
+  li{
+    
+    font-size:2em;
+    width:100%;
+    text-align: center;
+  }
+
+  li > a{
+    color:#122620;
+  }
+
+  .general{
+    width: 80vw;
+  }
+
+  input#mot-de-passe{
+    background-color:#D6AD60;
+    width:200px;
+    height:28px;
+    border:none;
+  }
+  
+  #email, input, select{
+    background-color:#D6AD60;
+    width:235px;
+    height:28px;
+    /* border:none; */
+  }
+
+  .text-checkbox{
+    color:#D6AD60;
+    font-family: 'rasa';
+    font-size: 3vw;
+  }
+
+  input[type=checkbox]{
+    width: 50px;
+  }
+
+  .checkbox{
+    width:300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+} 

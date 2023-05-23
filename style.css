@@ -58,6 +58,7 @@ header{
   /* border:solid 1px; */
 }
 
+
 .nom-restaurant{
   font-size: 4vw;
   width:410px;
@@ -84,13 +85,14 @@ nav{
 
 ul{
   display: flex;
-  justify-content: space-between;
-  width:50vw;
+  justify-content: space-around;
+  width:98vw;
   margin:0;
   padding:0;
+  /* border:solid 1px white; */
 }
 
-li a{
+li > a{
   color:white;
   text-decoration: none;
 }
@@ -104,21 +106,19 @@ li{
   list-style-type: none;
   /* border:solid 1px; */
   font-family: 'roman-italic';
-  font-size: 2vw;
+  font-size: 2em;
 }
 
-.carte{
-  width:180px;
+.carte, .reservations, #connexion{
+  text-align: center;
 }
 
-.reservations{
-  width:180px;
+.header-mobile{
+  display: none;
 }
 
-#connexion{
-  display: flex;
-  justify-content: flex-end;
-  width:180px;
+.nav-mobile{
+  display: none;
 }
 
 main{
@@ -134,48 +134,49 @@ main{
 }
 
 
-img.table{
+.table{
   width:98vw;
 }
 
 p.mot-du-chef{
   color:#D6AD60;
   font-family: rasa;
-  font-size: 2vw;
+  font-size: 2em;
   width:80vw;
   margin-top: 70px;
   margin-bottom: 70px;
   /* border:solid 1px; */
 }
 
-#cochon{
+#plat_1{
   background-image: url(images/images-accueil/cochon-de-lait.jpg);
 }
 
-#sandre{
+#plat_2{
   background-image: url(images/images-accueil/filet-sandre.jpg);
 }
 
-#ratatouille{
+#plat_3{
   background-image: url(images/images-accueil/ratatouille-revisitee.jpg);
 }
 
-#ragout{
+#plat_4{
   background-image: url(images/images-accueil/ragout.jpg);
 }
 
-#scone{
+#plat_5{
   background-image: url(images/images-accueil/scone.jpg);
 }
 
-#creme{
+#plat_6{
   background-image: url(images/images-accueil/creme.jpg);
 }
 
 
-#cochon, #sandre, #ratatouille, #ragout, #scone, #creme{
+#plat_1, #plat_2, #plat_3, #plat_4, #plat_5, #plat_6{
   background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
   align-items: center;
   border-radius: 5px;
   background-size: 100%;
@@ -185,14 +186,11 @@ p.mot-du-chef{
   box-shadow: 0px 0px 20px  rgba(214, 173, 96, 0.5);
 }
 
-.texte{
+#texte_plat_1, #texte_plat_2, #texte_plat_3, #texte_plat_4, #texte_plat_5, #texte_plat_6{
   display: flex;
   justify-content: center;
   align-items: center;
   width:100%;
-}
-
-#cochon p, #sandre p, #ratatouille p, #ragout p, #scone p, #creme p{
   color:#122620;
   font-family:'roman-italic';
   font-size: 2em;
@@ -224,6 +222,7 @@ button.reserver:hover{
 h1.titre-adresse{
   font-size: 3em;
   margin-top: 70px;
+  /* border:solid 1px; */
 }
 
 h2.titre-contact{
@@ -244,6 +243,7 @@ p a{
 h1.horaires{
   font-family: 'puritan';
   margin-top: 70px;
+  /* border:solid 1px; */
 }
 
 .petite-separation{
@@ -294,3 +294,68 @@ img.logo-facebook, .logo-instagram{
   border: solid 1px #D6AD60;
   border-radius: 15px;
 }
+
+
+@media screen and (max-width: 600px){
+  header{
+    display:none;
+  }
+  nav{
+    display:none;
+  }
+  .header-mobile{
+    display:flex;
+    justify-content: space-between;
+  }
+  #btn-menu{
+    background-image: url("images/couvertburger.jpg");
+    background-position: center;
+    background-size: 100%;
+    border:none;
+    width:80px;
+    height:80px;
+    margin-right:10vw;
+  }
+  #nav-mobile{
+    display:flex;
+    align-items: center;
+    background-image: url('images/fond-menu.jpg');
+    position:absolute;
+    margin-left:50vw;
+    width:50%;
+    height:calc(98vh - 170px);
+  }
+  ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:98%;
+    height:98%;
+  }
+  li{
+    
+    font-size:2em;
+    width:100%;
+    text-align: center;
+  }
+
+  li > a{
+    color:#122620;
+  }
+
+  p.mot-du-chef{
+    font-size:2em;
+  }
+
+  #plat_1, #plat_2, #plat_3, #plat_4, #plat_5, #plat_6{
+    width:300px;
+    height:200px;
+  }
+
+  #texte_plat_1, #texte_plat_2, #texte_plat_3, #texte_plat_4, #texte_plat_5, #texte_plat_6{
+    height:50px;
+    font-size: 1.2em;
+    background-color:rgba(214, 173, 96, 0.8) ;
+  } 
+  
+} 

@@ -20,11 +20,26 @@
           <a href="carte.html">Carte & Menus</a> 
         </li>
         <li class="reservations">
-          <a href="reservations.html">Réservations</a> 
+          <a href="reservations.html">Réservation</a> 
         </li>
-        <li class="connexion">
+        <li id="connexion">
           <a href="connexion.html">Se connecter</a><!--voir php plus tard-->
         </li>
+      </ul>
+    </nav>
+    <header class="header-mobile">
+      <a href="index.html"><img class="logo" src="images/logo.jpg" title="ACCUEIL" alt="logo représentant
+         une colonne antique avec les initiales Q et A."></a>
+      <button id="btn-menu"></button>  
+    </header>
+    <nav id="nav-mobile">
+      <ul>
+        <li><a href="carte.html">Carte</a></li>
+          <li><a href="menus.html">Menus</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li><a href="reservations.html">Réservation</a></li>
+        <img src="images/separ-haut.jpg" alt="décoration">
+        <li id="connexion"><a href="connexion.html">Se connecter</a></li>
       </ul>
     </nav>
 
@@ -87,7 +102,7 @@
               <input type="text">
             </div>
           </label>
-          <button>Valider</button>
+          <button class="valid">Valider</button>
         </form>
       </div>
       <div class="separation"></div>
@@ -101,3 +116,8 @@
       </div>
       <p class="copyright">Copyright-2023-laurent kujawa</p>
     </footer>
+
+    <script src="menu-mobile.js"></script>
+
+  </body>
+</html>
